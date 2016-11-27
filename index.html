@@ -1,23 +1,151 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
 
-<div class="home">
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-  <h1 class="page-heading">Posts</h1>
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/4/005/0a4/339/26683b4.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-white">
+            <h2>Kasper Faber</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Financieel adviseur</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Nijmegen, NL</p>
+                    <hr>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Vaardigheden</b></p>
+          <p>Word, Excel en Powerpoint</p>
+          <div class="w3-progress-container w3-round-xlarge w3-small">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:90%">
+              <div class="w3-center w3-text-white">90%</div>
+            </div>
+          </div>
+          <p>HTML</p>
+          <div class="w3-progress-container w3-round-xlarge w3-small">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:40%">
+              <div class="w3-center w3-text-white">40%</div>
+            </div>
+          </div>
+          <p>CSS, SASS</p>
+          <div class="w3-progress-container w3-round-xlarge w3-small">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:40%">
+              <div class="w3-center w3-text-white">40%</div>
+            </div>
+          </div>
+          <br>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Talen</b></p>
+          <p>Nederlands</p>
+          <div class="w3-progress-container w3-round-xlarge">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:100%"></div>
+          </div>
+          <p>Engels</p>
+          <div class="w3-progress-container w3-round-xlarge">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:90%"></div>
+          </div>
+          <p>Duits</p>
+          <div class="w3-progress-container w3-round-xlarge">
+            <div class="w3-progressbar w3-round-xlarge w3-teal" style="width:50%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <!-- End Left Column -->
+    </div>
 
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Werkervaring</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Financieel adviseur / ABN AMRO</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>Adviseur Lenen, Sparen, Verzekeren in het Leadsteam op het ASC. </br>
+Als adviseur Lenen, Sparen, Verzekeren in het Leadsteam op het Advies en Service Centrum bel je klanten proactief op om ze te adviseren over hun financiële situatie en waar nodig producten voor ze af te sluiten.
+</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Student-assistent / Radboud Universiteit Nijmegen</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mei 2015 - Aug 2016</h6>
+          <p>Als student-assistent ondersteunde ik twee docenten bij een aantal vakken. Hier vallen administratieve taken onder, maar ook het controleren van opdrachten.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Recruiter / Onsite Engineers</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2014 - Apr 2015</h6>
+          <p>Onsite Engineers is een detacheringsbureau voor technici, waar ik aan de hand van vacatures die we van onze klanten kregen, de geschikte kandidaat moest vinden. Samen met de consultants van het bedrijf nam ik ook interviews met de kandidaten af.</p><br>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Voorzitter / N.S.R.V. Phocas</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2013 - Sep 2014</h6>
+          <p>Eindverantwoordelijke van een studentenroeivereniging met 450 leden, een begroting van meer dan €300.000 en vele uiteenlopende activiteiten. Daarnaast was ik aanspreekpunt van de vereniging voor externen. Het bestuur bestond in mijn jaar uit zes full-time bestuurders, inclusief mijzelf.</p><br>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Diverse bijbanen</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2006 - Jan 2011</h6>
+          <p>Keukenmedewerker in een restaurant, telemarketeer bij een callcenter en          verkoopmedewerker in een wit- en bruingoed winkel.</p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card-2 w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Opleiding</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Radboud Universiteit</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015-2016</h6>
+          <p>Master Actuele Geschiedenis. </br>
+Masterscriptie: De invloed van monetair beleid op werkloosheid: lokaal historische verschillen als alternatief verklaringsmodel</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Radboud Universiteit</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011 - 2015</h6>
+          <p>Bachelor Geschiedenis </br>
+Bachelorscriptie: De Nederlanden: een moderne economie in een pre-modern Europa</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Murmelliusgymnasium Alkmaar</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2003 - 2009</h6>
+          <p>VWO </br>
+Vakken: Nederlands, Engels, Wiskunde, Geschiedenis, Aardrijkskunde, Economie, Filosofie, Latijn</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
 </div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-linkedin w3-hover-text-indigo w3-large"></i>
+  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>
